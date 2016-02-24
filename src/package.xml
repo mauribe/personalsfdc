@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Package xmlns="http://soap.sforce.com/2006/04/metadata">
+    <types>
+<<<<<<< HEAD
+        <members>ownerDelete</members>
+        <name>ApexTrigger</name>
+    </types>
+    <version>35.0</version>
+=======
+        <members>HelloWorld</members>
+        <members>Row</members>
+        <name>ApexClass</name>
+    </types>
+    <version>31.0</version>
+>>>>>>> 1aa770a91f5e6ba9b1fe0c3feb4b991303a98436
+</Package>
