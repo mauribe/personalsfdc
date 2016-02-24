@@ -1,0 +1,9 @@
+<apex:page >
+<apex:pageBlock >
+<apex:outputText value="{!$User.FirstName}"/> <br/>
+<apex:outputText value="{!$User.LastName}"/><br/>
+<apex:outputText value="{!$User.Email}"/><br/>
+<apex:outputText value="{!$User.Phone}"/><br/>
+<apex:outputText value="{!$User.Title}"/><br/>
+</apex:pageBlock>
+</apex:page>

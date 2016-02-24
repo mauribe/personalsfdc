@@ -1,0 +1,3 @@
+<apex:page standardController="Invoice__c">
+<apex:canvasApp developerName="heroku83270" parameters="{'orderId':'{!Invoice__c.order_number__c}'}" width="100%"/>
+</apex:page>

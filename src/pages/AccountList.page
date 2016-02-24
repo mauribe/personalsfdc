@@ -1,0 +1,17 @@
+<apex:page standardController="Account" recordSetVar="accounts">
+
+
+
+        <apex:repeat var="a" value="{!accounts}">
+
+<ul>
+    <li>
+        <apex:outputLink value="/{!a.id}" id="theLink">www.salesforce.com</apex:outputLink>
+    
+    </li>
+            </ul>
+
+
+        </apex:repeat> 
+
+</apex:page>

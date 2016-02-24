@@ -1,0 +1,5 @@
+<apex:page >
+<apex:form >
+<img src="{!$Resource.LiveLogo}" />
+</apex:form>
+</apex:page>

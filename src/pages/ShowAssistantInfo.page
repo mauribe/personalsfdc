@@ -1,0 +1,6 @@
+<apex:page standardController="Contact">
+<apex:pageBlock >
+{!Contact.AssistantName} <br/>
+<p>Book now, call <a href="tel:{!Contact.AssistantPhone}">01234 567 890</a></p> <br/>
+</apex:pageBlock>
+</apex:page>

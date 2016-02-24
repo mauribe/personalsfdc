@@ -1,0 +1,3 @@
+<apex:page standardController="Opportunity">
+<apex:image id="theImage" value="{!If(opportunity.StageName == "Prospecting", '/img/samples/stars_100.gif', If(opportunity.StageName =="Needs Analysis", '/img/samples/stars_100.gif',If(opportunity.StageName =="Proposal/Price Quote", '/img/samples/stars_100.gif',If(opportunity.StageName =="Negotiation/Review", '/img/samples/stars_100.gif','/img/samples/stars_100.gif'))))}" width="25" height="12"/>
+</apex:page>
