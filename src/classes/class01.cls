@@ -18,7 +18,7 @@ global virtual with sharing class class01 implements Iterator<Account> {
     
 // ////// Variables //////
 /*	
-////// SET ////// 
+////// SET /////// 
   A set is a collection of unique, unordered elements. Ex. used to store collections of IDs that you want to use in a SOQL query
 Set<String> s = new Set<String>{'Jon', 'Quinton', 'Reid'};
 
