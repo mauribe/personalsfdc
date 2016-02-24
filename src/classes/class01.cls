@@ -103,7 +103,7 @@ public enum Season {WINTER, SPRING, SUMMER, FALL}
     DateTime t1;
 	transient DateTime t2;
     
-// ////// Initialization Code ////// 
+// ////// Initialization Code /////// 
     static {
         // The instance initialization code in a class is executed each time an object is instantiated from that class. These code blocks run before the constructor.   
         system.debug('Initialization Code');
