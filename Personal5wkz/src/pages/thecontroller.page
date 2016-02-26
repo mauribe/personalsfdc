@@ -1,0 +1,11 @@
+<apex:page controller="thecontroller" tabStyle="lead">
+<apex:form >
+<apex:pageblock >
+<h1>FirstName : </h1>    <apex:inputText value="{!FirstName}"/> <br/>
+<h1>LastName : </h1>    <apex:inputText value="{!LastName}"/> <br/>
+<h1>Company : </h1>    <apex:inputText value="{!Company}"/> <br/>
+<h1>Test : </h1>    <apex:inputText value="{!test}"/> <br/>
+<apex:commandButton value="Save it!" action="{!save}"/>
+</apex:pageblock>
+</apex:form>
+</apex:page>

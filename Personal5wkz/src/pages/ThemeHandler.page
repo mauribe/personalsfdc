@@ -1,0 +1,16 @@
+<apex:page standardController="Account" extensions="ThemeHandler" showHeader="false">
+    <apex:form >
+        <apex:pageBlock id="ThemePreview" >
+        <apex:stylesheet value="{!URLFOR($Resource[selectedTheme], 'styles/styles.css')}"/>
+        <h1>Theme Viewer</h1>
+        <p>You can select a theme to use while browsing this site.</p>
+            <apex:pageBlockSection >
+                <apex:outputLabel value="Select Theme: " for="themesList"/>
+                <apex:selectList id="themesList" size="1" value="{!selectedTheme}">
+                    <apex:actionSupport event="onchange" rerender="ThemePreview"/>
+                    <apex:selectOptions value="{!themeOptions}"/>
+                </apex:selectList>
+            </apex:pageBlockSection>
+        </apex:pageBlock>
+    </apex:form>
+</apex:page>

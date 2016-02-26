@@ -1,0 +1,27 @@
+<apex:page standardController="contact" extensions="thecontroller" recordSetVar="contacts" docType="html-5.0">
+<apex:form >
+
+<apex:pageblock >
+<apex:pageBlockSection >
+<apex:pageMessages /> 
+<apex:inputfield label="LastName" value="{!Contact.FirstName}"/>
+</apex:pageBlockSection>
+<apex:pageBlockSection >
+<apex:inputfield label="LastName" value="{!Contact.LastName}"/>
+</apex:pageBlockSection>
+<apex:commandButton action="{!saveValitionRules}" value="saveValidate"/>
+</apex:pageblock>
+
+<apex:dataTable value="{!contacts}" var="c" cellPadding="4" border="1" rows="2">
+<apex:column >
+{!c.name}
+</apex:column>
+</apex:dataTable>
+<br/>
+<apex:pageblock >
+<apex:pageBlockSection >
+<c:Component01 componentValue="blabla"></c:Component01>
+</apex:pageBlockSection>
+</apex:pageblock>
+</apex:form>
+</apex:page>

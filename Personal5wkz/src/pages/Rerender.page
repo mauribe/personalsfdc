@@ -1,0 +1,22 @@
+<apex:page standardController="Account">
+<apex:form >
+<apex:pageBlock >
+<apex:pageBlockSection >
+<apex:inputField label="type" value="{!Account.type}">
+<apex:actionSupport event="onchange" rerender="detail" status="status"/>
+</apex:inputField>
+
+<apex:outputLabel id="detail">
+    <apex:actionStatus id="status" startText="Requesting..."> <!-- Asynchronous: display text at the beginning or end of a background event -->
+        <apex:facet name="stop">
+            <apex:outputLabel value="Description" for="vDescription"    rendered="{!IF(Account.Type = 'Analyst', true, false)}">
+            <apex:inputField id="vDescription" value="{!Account.description}"/>
+            </apex:outputLabel>
+        </apex:facet>
+    </apex:actionStatus>
+</apex:outputLabel>
+</apex:pageBlockSection>
+</apex:pageBlock>
+</apex:form>
+
+</apex:page>

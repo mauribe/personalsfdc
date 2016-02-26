@@ -1,0 +1,15 @@
+<apex:page standardController="Account" extensions="simplegetset" showHeader="false" recordSetVar="test">
+
+<apex:form id="theForm">
+        <apex:pageBlock title="Viewing Accounts">
+            <apex:pageBlockSection >
+            <apex:dataList var="a" value="{!account}" type="1">
+            
+            <apex:outputField value="{!a.name}"/>
+            <apex:inputField value="{!a.industry}"/>
+            </apex:dataList>
+            </apex:pageBlockSection>
+            <apex:commandButton action="{!save}" value="Save!"/>
+        </apex:pageblock>
+    </apex:form>  
+</apex:page>

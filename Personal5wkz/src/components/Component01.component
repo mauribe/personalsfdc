@@ -1,0 +1,4 @@
+<apex:component controller="class17Component">
+<apex:attribute name="componentValue" description="Attribute on the component." type="String" required="required" assignTo="{!controllerValue}"/>
+<apex:outputText value="{!controllerValue}"/>
+</apex:component>
